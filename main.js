@@ -1,6 +1,15 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
 
+// modules to execute Unix Shell commands in NodeJS
+const shell = require('shelljs')
+
+// we need git
+if (!shell.which('git')) {
+  shell.echo('Sorry, this software requires git.\n');
+  shell.exit(1);
+}
+
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
