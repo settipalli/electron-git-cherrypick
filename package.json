@@ -1,0 +1,22 @@
+{
+  "name": "electron-git-cherrypick",
+  "version": "1.0.0",
+  "description": "An Electron application that allows you to drag and drop commits across branches.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "git",
+    "cherrypick",
+    "merge",
+    "branches"
+  ],
+  "author": "Santhoshkumar Settipalli",
+  "license": "Apache-2",
+  "devDependencies": {
+    "electron": "^5.0.2"
+  }
+}
